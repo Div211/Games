@@ -1,7 +1,3 @@
-import java.util.Scanner;
-import java.util.Random;
-//project 2
-//Code of a game for predicting random number and match it with random compuraterised number
 public class projects {
     public static void main(String[] args) {
         game g = new game();
@@ -16,7 +12,7 @@ public class projects {
 class game{
     int number;
     int inputNumber;
-    int guesses;
+    int guesses = 0;
     game(){
         Random rand = new Random();
         this.number = rand.nextInt(100);
@@ -35,8 +31,10 @@ class game{
         inputNumber = sc.nextInt(); 
     }
     boolean isCorrectNumber(){
+        guesses++;
         if(inputNumber==number){
-            return true;
+            System.out.println("Yes u guessed it right: "+number);
+            System.out.println("Number of attempts are: "+guesses);
         }
         else if(inputNumber<number){
             System.out.println("Too Less: ");
