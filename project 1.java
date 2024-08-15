@@ -2,8 +2,8 @@
 import java.util.Scanner;
 import java.util.Random;
 //Code for rock paper scissor
-project 1
-Code for rock paper scissor
+//project 1
+//Code for rock paper scissor
 public class projects {    
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
